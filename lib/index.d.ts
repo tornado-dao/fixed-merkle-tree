@@ -3,43 +3,43 @@ export { PartialMerkleTree } from './PartialMerkleTree';
 export { simpleHash } from './simpleHash';
 export { MerkleTree };
 export default MerkleTree;
-export declare type HashFunction<T> = {
+export type HashFunction<T> = {
     (left: T, right: T): string;
 };
-export declare type MerkleTreeOptions = {
+export type MerkleTreeOptions = {
     hashFunction?: HashFunction<Element>;
     zeroElement?: Element;
 };
-export declare type Element = string | number;
-export declare type SerializedTreeState = {
+export type Element = string | number;
+export type SerializedTreeState = {
     levels: number;
     _zeros: Array<Element>;
     _layers: Array<Element[]>;
 };
-export declare type SerializedPartialTreeState = {
+export type SerializedPartialTreeState = {
     levels: number;
     _layers: Element[][];
     _zeros: Array<Element>;
     _edgeLeafProof: ProofPath;
     _edgeLeaf: LeafWithIndex;
 };
-export declare type ProofPath = {
+export type ProofPath = {
     pathElements: Element[];
     pathIndices: number[];
     pathPositions: number[];
     pathRoot: Element;
 };
-export declare type TreeEdge = {
+export type TreeEdge = {
     edgeElement: Element;
     edgePath: ProofPath;
     edgeIndex: number;
     edgeElementsCount: number;
 };
-export declare type TreeSlice = {
+export type TreeSlice = {
     edge: TreeEdge;
     elements: Element[];
 };
-export declare type LeafWithIndex = {
+export type LeafWithIndex = {
     index: number;
     data: Element;
 };
