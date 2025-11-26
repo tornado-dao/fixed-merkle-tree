@@ -2,7 +2,7 @@
   "name": "@tornado/fixed-merkle-tree",
   "version": "0.7.3",
   "description": "Fixed depth merkle tree implementation with sequential inserts",
-  "repository": "https://git.tornado.ws/tornado-packages/fixed-merkle-tree.git",
+  "repository": "https://codeberg.org/torndao/fixed-merkle-tree.git",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
