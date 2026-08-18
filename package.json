@@ -2,7 +2,7 @@
   "name": "@tornado/fixed-merkle-tree",
   "version": "0.6.1",
   "description": "Fixed depth merkle tree implementation with sequential inserts",
-  "repository": "https://git.tornado.ws/tornado-packages/fixed-merkle-tree.git",
+  "repository": "https://github.com/tornado-dao/fixed-merkle-tree.git",
   "main": "src/merkleTree.js",
   "scripts": {
     "test": "mocha",
@@ -19,8 +19,8 @@
     "src/*"
   ],
   "dependencies": {
-    "@tornado/circomlib": "0.0.21",
-    "@tornado/snarkjs": "0.1.20"
+    "@tornado/circomlib": "git+https://github.com/tornado-dao/circomlib.git#45ec8673b102a78135dda981aa550e7a8579b80f",
+    "@tornado/snarkjs": "git+https://github.com/tornado-dao/snarkjs.git#7af5831fe569708970a91ae47cca9abaf6869881"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
